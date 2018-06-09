@@ -1,0 +1,80 @@
+body{
+    background-color: #dddddd;
+    color: #404040;
+    font-size: 2.5vh;
+    margin: 0px 0px 8px 0px;
+    font-family: 'メイリオ';
+}
+
+.menu{
+    background: #5675ff;
+}
+.menu:hover{
+    background-color: #7897ff;
+}
+td{
+    align-items: center;
+    text-align: center;
+    padding: 2px 10px;
+}
+.miss{
+    background-color: #ff5656;
+}
+.miss:hover{
+    background-color: #ff7878;
+}
+
+
+.btn{
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #ffffff;
+    transition: .4s;
+    border-radius: 10vh;
+    font-size: 1.25vw;
+    font-family: 'メイリオ';
+  }
+
+.normal{
+    background: #505050;
+}
+.normal:hover {
+    background: #202020;
+}
+
+#settings{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+    position: fixed;
+    top: 0px;
+    z-index: 100000000000000000000;
+}
+p.settingLogo{
+    font-size: 30px;
+    padding: 10px;
+    margin: 0px;
+}
+#settings input,select{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace, 'メイリオ';
+}
+
+p#roomId{
+    padding-left: 10px;
+}
+
+
+.main{
+    padding: 10px 20px;
+    padding-top: 50px;
+}
+
+#notice{
+    color: #ff0000;
+}

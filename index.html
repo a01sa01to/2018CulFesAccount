@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>財務会計システムといえば...？えｍ..ＭＪＳ()</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link rel="stylesheet" href="fontawesome/css/fontawesome-all.css">
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div id="settings">
+        <p class="settingLogo">Settings  <i class="fas fa-angle-down"></i><i class="fas fa-angle-up" style="display:none;"></i></p>
+        <div id="settingMenu" style="display:none;"><br>
+            Document Title:<input type="text" id="ttl" onchange="document.title=$('input#ttl').val();"><br><br>
+            BackGround Color: <input type="color" value="#ffffff" id="bgcolor" onchange="$('body').css('background-color',$('#bgcolor').val());"><br><br>
+            ForeGround Color: <input type="color" value="#404040" id="font_color" onchange="$('body').css('color',$('#font_color').val());"><br><br>
+            <select id="roomSelect" style="display:none;" onchange="roomSelector()"> <option value="" selected>選択してください</option> <option value="Bear">くま</option><option value="Alice">アリス</option></select>
+        <br><br></div>
+    </div>
+    
+    <div class="main">
+        <p id="roomId">まずは設定から部屋を選択してください</p>
+        <form action="writer.php" method="get">
+            <input type="hidden" name="room">
+            <input type="hidden" name="donut">
+            <input type="hidden" name="waffle">
+            <input type="hidden" name="drink">
+            <input type="hidden" name="dSet">
+            <input type="hidden" name="wSet">
+            <input type="hidden" name="total">
+            <input type="hidden" name="donutRemain">
+            <input type="hidden" name="waffleRemain">
+
+            
+            <table border="0">
+                <tr><td>
+            <input type="button" value="ドーナツ \150" class="menu btn" id="donut"></td><td>
+            <input type="button" value="ワッフル \150" class="menu btn" id="waffle"></td><td>
+            <input type="button" value="ドリンク \100" class="menu btn" id="drink"></td><td>
+            <input type="button" value="ドーナツセット \200" class="menu btn" id="dSet"></td><td>
+            <input type="button" value="ワッフルセット \200" class="menu btn" id="wSet"></td></tr>
+            
+            <tr><td>
+            <input type="button" value="ドーナツ取消" class="miss btn" id="donut mis"></td><td>
+            <input type="button" value="ワッフル取消" class="miss btn" id="waffle mis"></td><td>
+            <input type="button" value="ドリンク取消" class="miss btn" id="drink mis"></td><td>
+            <input type="button" value="ドーナツセット取消" class="miss btn" id="dSet mis"></td><td>
+            <input type="button" value="ワッフルセット取消" class="miss btn" id="wSet mis"></td></tr></table><br>
+            
+            <p id="room_calc">
+                部屋選択
+                <input type="button" class="btn normal" id="roomCalcurator_Alice" value="ありす">
+                <input type="button" class="btn normal" id="roomCalcurator_Bear" value="くま">
+                <input type="button" class="btn normal" id="roomCalcurator_ok" value="どっちでもOK"><br>
+                結果：
+                <i id="result"></i>
+            </p>
+            <input type="submit" value="記録 (Enterキー)" class="btn normal" id="submit" disabled>
+            
+        </form>
+        <p id="calc"></p>
+        <p id="notice">
+            注意：キーボードを使用する際にはテンキーのみを使用してください。<br>
+                  えっ？テンキーを知らない？<a href="tenkey.html">これ</a>を参照してください。
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
