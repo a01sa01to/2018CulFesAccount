@@ -10,6 +10,6 @@ I could make this system only 6 files.
 >script.js `All Script`  
 >stylesheet.css `All Style`  
 >writer.php `Write data to output.csv`  
->output.csv  `Result` This is not included in this repository because the earning is written.`  
+>output.csv  `Result` `This is not included in this repository because the earning is written.`  
 >[jQuery](https://jquery.com) `I like jQuery.`  
 - - -
