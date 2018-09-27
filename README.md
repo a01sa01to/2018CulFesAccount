@@ -13,3 +13,19 @@ I made this system with only 6 files.
 >output.csv  `Result` `This is not included in this repository because the earning is written.`  
 >[jQuery](https://jquery.com) `Version 3.3.1` `This is not included in this repository because I don't make jQuery.`  
 - - -
+- - -
+### Japanese Introduction
+# 2018年文化祭 会計システム
+私が作ったこのシステム。
+PHP実行環境が必須です。
+HTML,CSS,JS,PHPだけで作りました。
+[FontAwesome](https://fontawesome.com)というサイトのおかげでメニュー欄を作ることができました。Thanks!
+- - -
+システム構成ファイルはたった6つ。
+>index.html `これがメイン。`
+>script.js `作成したJavaScriptコマンドすべて`
+>stylesheet.css `レイアウト用、全て。`
+>writer.php `output.csvにデータ書き込み用`
+>output.csv `結果` `このファイルは売上が書かれているためアップロードしていません。`
+>[jQuery ](https://jquery.com) `バージョン3.3.1` `私はjQueryを作ってないのでアップロードしておりません。`
+- - -
