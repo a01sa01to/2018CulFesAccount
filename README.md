@@ -1,7 +1,7 @@
-# 2018CulturalFestivalAccountingSystem
+# 2018 Cultural Festival Accounting System
 2018 Cultural Festival
 Accounting System. I made.  
-It requires PHP.
+It requires environment to execute PHP.
 This is made of only HTML,CSS,JS,PHP.  
 Thanks to [FontAwesome](https://fontawesome.com), I could made menu.  
 - - -
